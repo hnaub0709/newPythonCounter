@@ -35,24 +35,56 @@
 // }
 // btn2.addEventListener('click', coloredCc)
 
+let heading = document.querySelector("h1");
+let inc = document.querySelector(".inc");
+let res = document.querySelector(".res");
+let dec = document.querySelector(".dec");
 
-let heading = document.querySelector('h1')
-let inc = document.querySelector('.inc')
-let res = document.querySelector('.res')
-let dec = document.querySelector('.dec')
+function DECREASE() {
+  heading.innerText--;
+  let body = document.body
+  body.style.backgroundColor = 'yellow'
+  }
+dec.addEventListener("click", DECREASE);
 
-function DECREASE () {
-    heading.innerText--
+function RESET() {
+  heading.innerText = 0;
+  let body = document.body
+  body.style.backgroundColor = 'red'
 }
-dec.addEventListener('click' , DECREASE)
+res.addEventListener("click", RESET);
 
-
-function RESET () {
-    heading.innerText = 0
+function INCREASE() {
+  heading.innerText++;
+  let body = document.body
+  body.style.backgroundColor = 'green'
 }
-res.addEventListener('click' , RESET)
+inc.addEventListener("click", INCREASE);
 
-function INCREASE () {
-    heading.innerText++
-}
-inc.addEventListener('click' , INCREASE)
+
+
+
+
+// body.style.backgroundColor = 'green'
+
+// 
+
+// let btn1 = document.querySelector(".res");
+// function coloredC() {
+//   if ( = 0) {
+//     let body = document.body;
+//     body.style.backgroundColor = "green";
+//   } else if (btn1 < -0) {
+//     let body = document.body;
+//     body.style.backgroundColor = "red";
+//   } else if (btn1 > +1) {
+//     let body = document.body;
+//     body.style.backgroundColor = "yellow";
+//   }
+// }
+// btn1.addEventListener("click", coloredC);
+
+// function INCREASE () {
+//     heading.innerText++
+// }
+// inc.addEventListener('click' , INCREASE)

@@ -8,10 +8,28 @@ padding: 0;
     place-content: center;
     place-items: center;
     grid-gap: 15px;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .btn-group{
     display: flex;
-    gap: 10px;
+    gap: 15px;
+}
+.inc{
+    font-family: Candara;
+    font-size: 20px;
+}
+.dec{
+    font-family: Candara;
+    font-size: 20px;
+}
+.res{
+    font-family: Candara;
+    font-size: 20px;
+}
+
+h2{
+    font-family: Candara;
+    font-weight: 300;
+    font-size: 30px;
 }
